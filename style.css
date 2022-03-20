@@ -1,0 +1,77 @@
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.outline-buttons {
+    margin-top: 10px;
+}
+
+.tooltip {
+    transform: translateX(900px) translateY(0px) scale(0);
+    user-select: none;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #adfc11;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: sans-serif;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 5px;
+}
+
+.tooltip.active {
+    animation: tooltip 2s ease-in-out;
+}
+
+@keyframes tooltip {
+    0% {
+        transform: translateX(900px) translateY(0px) scale(0);
+    }
+    10% {
+        transform: translateX(900px) translateY(20px) scale(1);
+    }
+    20% {
+        transform: translateX(900px) translateY(20px) scale(1);
+    }
+    30% {
+        transform: translateX(900px) translateY(20px) scale(1);
+    }
+    40% {
+        transform: translateX(900px) translateY(20px) scale(1);
+    }
+    50% {
+        transform: translateX(900px) translateY(20px) scale(1);
+    }
+    60% {
+        transform: translateX(900px) translateY(20px) scale(1);
+    }
+    70% {
+        transform: translateX(900px) translateY(20px) scale(1);
+    }
+    80% {
+        transform: translateX(900px) translateY(20px) scale(1);
+    }
+    90% {
+        transform: translateX(900px) translateY(20px) scale(1);
+    }
+    100% {
+        transform: translateX(900px) translateY(0px) scale(0);
+    }
+}
+
+.divider {
+    width: 2px;
+    height: 90px;
+    background-color: black;
+    transform: translateX(525px) translateY(-90px);
+}
+
+#try-it-btn {
+    transform: translateX(535px) translateY(-150px);
+}
